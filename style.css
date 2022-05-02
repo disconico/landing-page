@@ -1,62 +1,139 @@
-* {
-    box-sizing: border-box;
-    margin: 0;
-    padding: 0;
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+
+/* All divisions */
+
+html, body {
+    height: 100%;
 }
 
-.body{
-    font-family: 'roboto', sans-serif; 
-    line-height: 1.5;
-    display: flex;
-    flex-direction: column;
- }
+* {
+    box-sizing: border-box;
+}
 
-h1 {
-    color: #f9faf8;
-    font-size: 48px;
-    font-weight: bolder;
+body {
+    font-family: Roboto, sans-serif;
+    margin: 0;
+    padding: 0;
+    line-height: 1.1;
 }
 
 ul {
-    list-style-type: none;   
+    list-style-type: none;
 }
 
-.nav a{
+a {
     text-decoration: none;
-    color: white;
 }
 
-.nav{
-    display: flex;
-    gap: 12px;
+a:visited {
+    color: #e5e7eb;
 }
 
-.container{
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 0 8px;
+a:hover {
+    color: aquamarine;
 }
 
-.navbar{
-    color: whitesmoke;
+.container {
+    max-width: 1100px;
+    margin: 0 auto;
+    padding: 0 100px;
+}
+
+/* Navbar section */
+
+.navbar {
     background-color: #1f2937;
-    padding: 8px;
+    max-height: 100px;
 }
 
-
-.logo {
-    font: bold;
+.navbar .logo {
     font-size: 24px;
     color: #f9faf8;
 }
 
-
+.navbar .nav {
+    font-size: 18px;
+    color: #e5e7eb;
 }
+
+.navbar .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.container .nav {
+    display: flex;
+    justify-content: flex-end;
+    gap: 8px
+}
+
+/* Hero section */
 
 .hero {
-    color: whitesmoke;
-    background-color: #1f2937;  
+    background-color: #1f2937;
 }
 
+.hero h1 {
+    font-size: 48px;
+    color: #f9faf8;
+    font-weight: bolder;
+}
 
+.hero p {
+    font-size: 18px;
+    color: #e5e7eb;  
+}
+
+.hero .img {
+    max-width: 300px;
+    max-height: auto;
+    margin: 12 0 12 0px;
+    border-radius: 10px;
+    border-style: none;
+
+}
+
+.hero .container {
+    display: flex;
+    justify-content:space-between ;
+    align-items: center;
+    padding-bottom: 12px;
+}
+
+.container .left {
+    flex: 0 1 100%;
+    margin-right: 20px;
+}
+
+.container .right {
+    flex: 0 1 100%;
+    display: flex;
+    justify-content: flex-end;
+}
+
+.hero .button {
+    background-color: #3882f6 ;
+    color: #e5e7eb;
+    border-radius: 5px;
+    border-style: none;
+    font-size: 16px;
+    padding: 6px 32px;
+}
+
+/* Information section */
+
+.information .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.information img{
+max-width: 90%;
+}
+
+/* .container .info { */
+    flex: 0 1 100%;
+    max-width: 50px;
+}
