@@ -11,7 +11,7 @@ html, body {
 }
 
 body {
-    font-family: Roboto, sans-serif;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
     margin: 0;
     padding: 0;
     line-height: 1.1;
@@ -82,7 +82,7 @@ a:hover {
 
 .hero p {
     font-size: 18px;
-    color: #e5e7eb;  
+    color: #e5e7eb;
 }
 
 .hero .img {
@@ -98,7 +98,7 @@ a:hover {
     display: flex;
     justify-content:space-between ;
     align-items: center;
-    padding-bottom: 12px;
+    padding-bottom: 30px;
 }
 
 .container .left {
@@ -123,17 +123,68 @@ a:hover {
 
 /* Information section */
 
+.information h2 {
+    text-align: center;
+    font-size: 36px;
+    color: #1f2937;
+    font-weight: bolder;
+}
+
 .information .container {
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
+    align-items:baseline;
+    gap : 48px;
+    flex-wrap: wrap;
+}
+
+.info {
+    width: 150px;
+    height: auto;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
     align-items: center;
+
+    
 }
 
-.information img{
-max-width: 90%;
+.information img {
+width: 100px;
+height: 100px;
+/* justify-items:center ; */
 }
 
-/* .container .info { */
-    flex: 0 1 100%;
-    max-width: 50px;
+.information .text {
+    margin-top: 12px;
+    color: #1f2937;
+}
+
+/* Quote section */
+
+.quote {
+    background-color: #e5e7eb;
+    padding-top: 5px;
+    padding-bottom: 10px;
+    padding-left: 50px;
+    padding-right: 50px;
+    margin-top: 30px;
+}
+
+.quote .container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.quote .quotation {
+    font-size: 36px;
+    color: #1f2937;
+    font-weight: lighter;
+    font-style: italic;
+}
+
+.quote .signature {
+    align-self:flex-end ;
+    font-weight: bold;
 }
